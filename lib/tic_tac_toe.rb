@@ -130,14 +130,11 @@ def winner(board)
 end
 
 def play(board)
-  puts turn(board)
+  while !over?(board)
+    turn(board)
   if won?(board)
     puts "You won!"
   elsif draw?(board)
     puts "It's a draw!"
-  elsif full?(board)
-    puts "Game over!"
-  else
-    return play(board)
   end
 end
