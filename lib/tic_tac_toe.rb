@@ -136,6 +136,6 @@ def play(board)
   if won?(board)
     puts "Congratulations #{winner(board)}!"
   elsif draw?(board)
-    puts "Cat's game!"
+    print "Cat's game!"
   end
 end
