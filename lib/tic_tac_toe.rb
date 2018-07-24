@@ -31,8 +31,8 @@ def position_taken?(board, position)
   !(board[position] == " " || board[position] == nil)
 end
 
-def valid_move?(board, position)
-  position.between?(1, 9) && position == " "
+def valid_move?(board, index)
+  index.between?(0, 8) && board[index] == " "
 end
 
 def turn_count(board)
