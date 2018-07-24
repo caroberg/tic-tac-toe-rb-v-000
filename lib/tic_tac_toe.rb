@@ -33,7 +33,7 @@ def position_taken?(board, position)
 end
 
 def valid_move?(board, position)
-  index.between?(0, 8) && position_taken?(board, position)
+  position.between?(1, 9) && position_taken?(board, position)
 end
 
 def current_player(board)
