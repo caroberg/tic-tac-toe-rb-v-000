@@ -137,6 +137,5 @@ def play(board)
     puts "You won!"
   elsif draw?(board)
     puts "It's a draw!"
-  end  
+  end
 end
-
