@@ -51,7 +51,7 @@ end
 
 def turn(board)
   puts "Please enter a move: 1-9"
-  position = gets.strip 
+  position = gets.strip
   position = position.to_i - 1
     if valid_move?(board, position)
       token = current_player(board)
