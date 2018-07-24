@@ -24,7 +24,7 @@ def input_to_index(user_input)
 end
 
 def move(board, position, token)
-  index == position.to_i - 1
+  index = position.to_i - 1
   board[index] = token
 end
 
@@ -33,7 +33,7 @@ def position_taken?(board, position)
 end
 
 def valid_move?(position)
-  position.between?(1, 9) && position == " "
+  position.between?(1, 9) 
 end
 
 def current_player(board)
