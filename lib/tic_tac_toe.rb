@@ -29,12 +29,10 @@ def move(board, position, token)
 end
 
 def position_taken?(board, position)
-  index = position.to_i - 1
   !(board[index] == " ")
 end
 
 def valid_move?(board, position)
-  index = position.to_i - 1
   index.between?(0, 8) && position_taken?(board, position)
 end
 
