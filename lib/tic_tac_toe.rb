@@ -143,6 +143,6 @@ def play(board)
   elsif full?(board)
     puts "Game over!"
   else
-    play(board)
+    return play(board)
   end
 end
