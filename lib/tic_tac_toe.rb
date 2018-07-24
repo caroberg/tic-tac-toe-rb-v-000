@@ -1,3 +1,5 @@
+require 'pry'
+
 WIN_COMBINATIONS = [
   [0, 1, 2],
   [3, 4, 5],
@@ -65,6 +67,7 @@ end
 
 def won?(board)
   WIN_COMBINATIONS.each do |win_combination|
+    binding.pry
     win_index_1 = win_combination[0]
     win_index_2 = win_combination[1]
     win_index_3 = win_combination[2]
