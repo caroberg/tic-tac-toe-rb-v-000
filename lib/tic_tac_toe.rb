@@ -98,7 +98,6 @@ def draw?(board)
   else
     return true
   end
-  return false
 end
 
 def over?(board)
